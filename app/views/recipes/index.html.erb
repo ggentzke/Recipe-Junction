@@ -2,9 +2,9 @@
 
 <table>
   <tr>
+    <th>Author</th>
     <th>Name</th>
     <th>Diet</th>
-    <th>Author</th>
     <th>Meal type</th>
     <th>Serving size</th>
     <th>Ingredients</th>
@@ -16,9 +16,9 @@
 
 <% @recipes.each do |recipe| %>
   <tr>
+    <td><%= recipe.author %></td>
     <td><%= recipe.name %></td>
     <td><%= recipe.diet %></td>
-    <td><%= recipe.author %></td>
     <td><%= recipe.meal_type %></td>
     <td><%= recipe.serving_size %></td>
     <td><%= recipe.ingredients %></td>

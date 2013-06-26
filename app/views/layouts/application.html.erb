@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <p>
+    Go to:
+    <%= link_to 'Authors', authors_path %>
+    <%= link_to 'Recipes', recipes_path %>
+  </p>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
