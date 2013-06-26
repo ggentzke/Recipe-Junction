@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: recipe_junction_development
   pool: 5
-  username: recipe_junction
+  username: adhoc
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -43,7 +43,7 @@ test:
   encoding: unicode
   database: recipe_junction_test
   pool: 5
-  username: recipe_junction
+  username: adhoc
   password:
 
 production:
