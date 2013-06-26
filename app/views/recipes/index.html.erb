@@ -1,6 +1,6 @@
 <h1>Listing recipes</h1>
 
-<table>
+<table class="table table-striped table-bordered">
   <tr>
     <th>Author</th>
     <th>Name</th>
@@ -14,20 +14,20 @@
     <th></th>
   </tr>
 
-<% @recipes.each do |recipe| %>
-  <tr>
-    <td><%= recipe.author %></td>
-    <td><%= recipe.name %></td>
-    <td><%= recipe.diet %></td>
-    <td><%= recipe.meal_type %></td>
-    <td><%= recipe.serving_size %></td>
-    <td><%= recipe.ingredients %></td>
-    <td><%= recipe.instructions %></td>
-    <td><%= link_to 'Show', recipe %></td>
-    <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-    <td><%= link_to 'Destroy', recipe, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.author %></td>
+      <td><%= recipe.name %></td>
+      <td><%= recipe.diet %></td>
+      <td><%= recipe.meal_type %></td>
+      <td><%= recipe.serving_size %></td>
+      <td><%= recipe.ingredients %></td>
+      <td><%= recipe.instructions %></td>
+      <td><%= link_to 'Show', recipe %></td>
+      <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+      <td><%= link_to 'Destroy', recipe, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
 </table>
 
 <br />
